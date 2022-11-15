@@ -20,14 +20,12 @@ interface Burger{
     public void makeBurger();
 
 }
-
 class PlainBurger implements Burger{
 
     public void makeBurger() {
         System.out.println( "Plain Burger  is ready");
     }
 }
-
 abstract class BurgerDecorator extends PlainBurger{
     protected Burger burger;
 
@@ -41,7 +39,7 @@ abstract class BurgerDecorator extends PlainBurger{
 
 
 }
-    class CheeseBurgerDecorator extends BurgerDecorator{
+class CheeseBurgerDecorator extends BurgerDecorator{
         public CheeseBurgerDecorator(Burger burger) {
             super(burger);
         }
